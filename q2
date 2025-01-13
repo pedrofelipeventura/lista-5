@@ -1,0 +1,28 @@
+//Escreva um programa que troque o valor de dois n ́umeros utilizando ponteiros.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int num1, num2, c ;
+int *p1, *p2;
+
+int main(){
+     printf("Digite o primeiro número:\n");
+     scanf("%d", &num1);
+     printf("Digite o segundo número:\n");
+     scanf("%d", &num2);
+
+     p1 = &num1;
+     p2 = &num2;
+     
+     c = *p1;
+     *p1=*p2;
+     *p2=c;
+
+    
+     
+     printf("O primeiro número é: %d\n", *p1);
+     printf("O segundo número é: %d\n", *p2);
+     
+    return 0;
+ }
